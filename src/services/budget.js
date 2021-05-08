@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3001";
+const API_URL = "https://mynt-backend.herokuapp.com";
 
 export function getBudgetByEpost(epost) {
   return fetch(`${API_URL}/budsjett/${epost}`).then((res) => res.json());

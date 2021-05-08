@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3001";
+const API_URL = "https://mynt-backend.herokuapp.com";
 
 export async function opprettNyKategori(tittel, budsjettID) {
   return fetch(`${API_URL}/kategori`, {
