@@ -14,7 +14,6 @@ import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import styled from "styled-components";
 import { ReactComponent as KrIcon } from "../kr.svg";
 
-
 class Hjem extends React.Component {
   constructor(props) {
     super(props);
@@ -26,6 +25,9 @@ class Hjem extends React.Component {
       payload = jwtDecode(token);
       console.log(payload);
     } catch (err) {
+      const { history } = this.props;
+      history.push("/logginn");
+
       // throw new Error('noe gikk galt')
     }
 
@@ -164,7 +166,6 @@ class Hjem extends React.Component {
             </Carousel>
           </Containit>
         </div>
-      
       </div>
     );
   }
