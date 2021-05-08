@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3001";
+const API_URL = "https://mynt-backend.herokuapp.com";
 
 export function getPostsByKatID(katid) {
   return fetch(`${API_URL}/budsjettpost/${katid}`).then((res) => res.json());
