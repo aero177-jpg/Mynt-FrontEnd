@@ -160,7 +160,7 @@ class Hjem extends React.Component {
             <Carousel>
               <BudsjettIcon>
                 <AddCircleOutlineIcon
-                  style={{ fill: `${secondaryGreen}`, fontSize: "70px" }}
+                  style={{ fill: "#FAF9F6", fontSize: "70px" }}
                 />
               </BudsjettIcon>
             </Carousel>
